@@ -7,8 +7,9 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run dev",
     "client": "cd client && npm run dev",
-    "build": "cd client && npm run build",
-    "start": "cd server && npm start"
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && npm start",
+    "vercel-build": "cd client && npm install && npm run build"
   },
   "keywords": ["walkie-talkie", "audio-calling", "video-calling", "real-time"],
   "author": "Your Name",
