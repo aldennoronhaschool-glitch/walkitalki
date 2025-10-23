@@ -68,11 +68,7 @@ class SocketManager {
       callStore.setIsInCall(true)
       
       toast.success(`Incoming audio call from ${data.from.username}`, {
-        duration: 10000,
-        action: {
-          label: 'Answer',
-          onClick: () => this.answerCall(data.callId)
-        }
+        duration: 10000
       })
     })
 
@@ -83,11 +79,7 @@ class SocketManager {
       callStore.setIsInCall(true)
       
       toast.success(`Incoming video call from ${data.from.username}`, {
-        duration: 10000,
-        action: {
-          label: 'Answer',
-          onClick: () => this.answerCall(data.callId)
-        }
+        duration: 10000
       })
     })
 
