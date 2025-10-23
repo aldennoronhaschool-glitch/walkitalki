@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { useFriendsStore } from '@/lib/store'
+import { useFriendsStore, useAuthStore } from '@/lib/store'
 import { friendsAPI } from '@/lib/api'
 import { socketManager } from '@/lib/socket'
 import toast from 'react-hot-toast'
